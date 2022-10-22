@@ -1,15 +1,18 @@
 # set up workspace
 rm(list=ls())
 
+setwd('/Users/vyasenov/Library/CloudStorage/OneDrive-Adobe/GitHub/personal/multiple-testing-methods-comparison')
+
 # load libraries
 library(skimr)
 library(broom)
 library(knockoff)
 library(hdm)
 library(tidyverse)
+library(xtable)
 
 # load data
-data <- read_csv(file='~/Library/CloudStorage/OneDrive-Adobe/blog/posts/titanic_dataset.csv')
+data <- read_csv(file='titanic_dataset.csv')
 colnames(data) <- tolower(colnames(data))
 
 # clean data
